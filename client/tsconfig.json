@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "outDir": "lib",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "declaration": true,
+    "declarationDir": "lib",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "paths": {
+      "@app-story-book/*": [".storybook/*"],
+      "@story-book-utilities": [".storybook/utilities/index.ts"],
+
+      "@src/*": ["src/*"],
+
+      "@common-types": ["src/types.ts"],
+      "@shared/*": ["src/shared/*"],
+      "@form-manager": ["src/shared/lib/form-manager"],
+
+      "@fonts/*": ["src/assets/fonts/*"],
+      "@icons/*": ["src/assets/img/icons/*"],
+      "@img/*": ["src/assets/img/*"],
+
+      "@global-styles": ["src/shared/styles/global-styles/index.ts"],
+      "@app-theme": ["src/shared/styles/theme/index.ts"],
+      "@mixins": ["src/shared/styles/mixins/index.ts"],
+      "@keyframes": ["src/shared/styles/keyframes/index.ts"],
+      "@styles-const": ["src/shared/styles/const/index.ts"],
+
+      "@pages": ["src/pages/index.ts"],
+      "@const": ["src/const.ts"],
+      "@ui-kit/*": ["src/shared/ui-kit/*"],
+      "@typography": ["src/shared/ui-kit/typography/index.ts"],
+      "@grid": ["src/shared/ui-kit/grid/index.ts"],
+      "@buttons/*": ["src/shared/ui-kit/button/*"],
+      "@inputs/*": ["src/shared/ui-kit/inputs/*"],
+      "@libs/*": ["src/shared/lib/*"],
+
+
+      "@hooks": ["src/hooks/index.ts"],
+      "@api/*": ["src/api/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "custom.d.ts",
+    "styled.d.ts"
+  ],
+  "exclude": ["node_modules", "build"]
+}
